@@ -26,7 +26,7 @@ SECRET_KEY = '&ts^7c=i7$f$4^*c+-%_kn_u=+)p6rmqm*znpgu9%vj3_&kb(1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.vocabbrain.com', '148.72.22.93']
+ALLOWED_HOSTS = ['www.vocabbrain.com', '148.72.22.93', 'vocabbrain.com']
 
 
 # Application definition

@@ -365,6 +365,13 @@ def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
 
 
+
+def gameDemo(request):
+        return render(request, 'blog/gameDemo.html',{'title':'Game Demo'})
+
+
+
+
 class WikiSearch:
     word = None
 

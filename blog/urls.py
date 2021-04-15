@@ -42,6 +42,8 @@ urlpatterns = [
 
 
     path('about/', views.about, name='blog-about'),
+
+    path('gameDemo/',views.gameDemo,name='blog-gameDemo'),
     path('teacher_lookup/', views.teacher_lookup, name='blog-teacher_lookup'),
 
     path('create_word_list/<int:pk>/', views.create_word_list, name='blog-create_word_list'),
