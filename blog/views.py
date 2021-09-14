@@ -366,8 +366,23 @@ def about(request):
 
 
 
-def gameDemo(request):
-        return render(request, 'blog/gameDemo.html',{'title':'Game Demo'})
+def gameDemo(request,pk):
+    wordlist = WordList.objects.get(pk=pk)
+    a = wordlist.id
+    words = Word.objects.filter(wordlist__id=a)
+    deflist = ""
+    termlist = ""
+    for i in words:
+        deflist +=  i.definition + ","
+        termlist +=  i.term.lower() + ","
+    
+    #termlist = "hefty,pelter,concretize,tamp"
+    #deflist = "of considerable weight and size,a thrower of missiles,make something concrete,press down tightly"
+
+    context = {
+        'mydefs': deflist, 'terms': termlist,
+    }
+    return render(request, 'blog/gameDemo.html', context)
 
 
 

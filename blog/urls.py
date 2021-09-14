@@ -22,7 +22,8 @@ from .views import WordListUpdateView
 from .views import UserFolderView
 from .views import Announcements
 from django.urls import path
-
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.landing, name='blog-landing'),
@@ -43,7 +44,7 @@ urlpatterns = [
 
     path('about/', views.about, name='blog-about'),
 
-    path('gameDemo/',views.gameDemo,name='blog-gameDemo'),
+    path('gameDemo/<int:pk>/',views.gameDemo,name='blog-gameDemo'),
     path('teacher_lookup/', views.teacher_lookup, name='blog-teacher_lookup'),
 
     path('create_word_list/<int:pk>/', views.create_word_list, name='blog-create_word_list'),
