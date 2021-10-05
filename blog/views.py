@@ -1073,8 +1073,11 @@ def sent_match_10(request, pk):
 def pencilPop(request):
     return render(request, 'blog/index.html', ({'title' : 'Pencil Pop Vocabulary'}))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 49c6ebfd (views.py Update with PencilPop lines (1071))
+=======
+>>>>>>> parent of ccc23d76 (Update views.py)
 =======
 >>>>>>> parent of ccc23d76 (Update views.py)
 
