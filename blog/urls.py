@@ -44,7 +44,7 @@ urlpatterns = [
 
     path('about/', views.about, name='blog-about'),
 
-    #path('index/',views.pencilPop,name='blog-index'),
+    path('index/',views.pencilPop,name='blog-index'),
     path('gameDemo/<int:pk>/',views.gameDemo,name='blog-gameDemo'),
     path('teacher_lookup/', views.teacher_lookup, name='blog-teacher_lookup'),
 
