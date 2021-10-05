@@ -1069,8 +1069,8 @@ def sent_match_10(request, pk):
     return render(request, 'blog/sent_match_10.html', context)
 
 #PencilPop Game
-#def pencilPop(request):
-    #return render(request, 'blog/index.html', ({'title' : 'Pencil Pop Vocabulary'}))
+def pencilPop(request):
+    return render(request, 'blog/index.html', ({'title' : 'Pencil Pop Vocabulary'}))
 
 # flash card game for 10 terms
 def flash_card_10(request, pk):
