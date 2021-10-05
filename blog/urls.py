@@ -44,7 +44,11 @@ urlpatterns = [
 
     path('about/', views.about, name='blog-about'),
 
+<<<<<<< HEAD
     path('index/',views.pencilPop,name='blog-pencilPop'),
+=======
+    path('index/',views.pencilPop,name='blog-index'),
+>>>>>>> parent of bddc95a8 (Update urls.py)
     path('gameDemo/<int:pk>/',views.gameDemo,name='blog-gameDemo'),
     path('teacher_lookup/', views.teacher_lookup, name='blog-teacher_lookup'),
 
