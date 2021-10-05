@@ -1068,9 +1068,12 @@ def sent_match_10(request, pk):
     }
     return render(request, 'blog/sent_match_10.html', context)
 
+<<<<<<< HEAD
 #PencilPop Game
 def pencilPop(request):
     return render(request, 'blog/index.html', ({'title' : 'Pencil Pop Vocabulary'}))
+=======
+>>>>>>> parent of 49c6ebfd (views.py Update with PencilPop lines (1071))
 
 # flash card game for 10 terms
 def flash_card_10(request, pk):
